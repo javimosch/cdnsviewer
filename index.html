@@ -2,77 +2,66 @@
 <!doctype html>
 <html>
 <head>
+    <title>CDNs: Search, Select, Generate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="pocketgrid.min.css" rel='stylesheet' type='text/css'>
-
-    <style>
-
-    body {
-	margin: 0;
-	font-size: .9em;
-	font-family: Arial;
-	line-height: 1.5em;
-}
-
-input{
-  text-decoration: none;
-    border: 0px;
-}
-
-button{
-  border: 1px solid black;
-background-color: rgba(255,255,255,.3);
-margin: 5px;
-}
-button:hover{
-  border: 1px solid white;
-}
-
-      .b100 { width: 100%; }
-      .b50 { width: 50%; }
-
-
-      .box {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 100%;
-    background: -moz-linear-gradient(top, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.5)), color-stop(100%,rgba(255,255,255,0)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#00ffffff',GradientType=0 );
-    background-color: #EEE;
-    font-size: .8em;
-    color: #777;
-    border: solid 1px #DDD;
-    /* border-radius: 2px; */
-    text-align: center;
-    padding: 10px 0;
-}
-.box-item{
-  background-color: cornsilk;
-}
-    </style>
-
+    <link href="cdnsviewer.css" rel='stylesheet' type='text/css'>
+    <link href="animate.css" rel='stylesheet' type='text/css'>
 </head>
 <body>
 
+
 <div class="block-group"> <!-- First row -->
+
+  <div class="b100 block">
+    <div class="box">
+      <h2>CDNs: Search, select and generate head tags. Add Too.</h2>
+      <h3>This is an example using Firebase Framework.</h3>
+      <a class='searchAdd' href='#' alt="Click To Switch Mode"></a>
+    </div>
+ </div>
+
+
   <div class="b100 block"><div class="box">
-      <input class="b100" placeholder="Search a library or Add">
-
-
-      <button>Execute</button>
+      <input class='visible searchAdd' placeholder="">
   </div></div>
 
+<!--
   <div class="b50 block"><div class="box">b1</div></div>
   <div class="b50 block"><div class="box">b2</div></div>
-  <div class="b100 block"><div class="box box-item">InnerHTML</div></div>
+-->
+
+  <div class="b100 block">
+    <div class="box box-item">
+      <h5>Search Results</h5>
+      <ul class="list clickable">
+      <ul>
+    </div>
+  </div>
+
+  <div class="b100 block">
+    <div class="box box-item">
+      <h5>Selection</h5>
+      <ul class="selectionList clickable">
+      <ul>
+    </div>
+  </div>
+
+  <div class="b100 block">
+      <div class="box box-item">
+      <h5 class="clickable" onclick="selectText();" alt="Select All">Head Tags (Press  to Select All)</h5>
+      <ul id="codeGeneratedContainer" class="code"></ul>
+    </div>
+  </div>
+
+
+
+
+
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+<script type="text/javascript" src="cdnsviewer.js"></script>
 </body>
 </html>

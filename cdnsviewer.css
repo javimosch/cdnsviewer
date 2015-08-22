@@ -1,0 +1,101 @@
+
+    body {
+	margin: 0;
+	font-size: 2vw;
+	font-family: Arial;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.clickable:hover{
+  cursor: pointer;
+}
+
+ul li{
+     list-style-type: none;
+}
+
+ul.clickable li{
+    border-left: 2px solid rgba(0,0,0,0);
+
+    list-style-type: none;
+}
+ul.clickable li.active{
+    border-left: 2px solid rgba(0,0,0,.2);
+
+}
+ul.clickable li:hover{
+    cursor: pointer;
+
+    text-decoration: overline;
+}
+
+textarea{
+  text-align: center;
+}
+
+input,textarea{
+  text-decoration: none;
+    border: 0px;
+    width: 80%;
+    background-color: rgba(0,0,0,.1);
+    height: 50px;
+
+  font-size: 2.1vw;
+    padding: 0px 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+input.visible{
+  display:block;
+}
+input.hide{
+  display: none;
+}
+
+button{
+  border: 1px solid black;
+background-color: rgba(255,255,255,.3);
+margin: 5px;
+}
+button:hover{
+  border: 1px solid white;
+}
+
+      .b100 { width: 100%; height: 100%; text-align: left;}
+      .b50 { width: 50%; }
+
+
+      .box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.5)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#00ffffff',GradientType=0 );
+    background-color: #EEE;
+    font-size: .8em;
+    color: #777;
+    border: solid 0px #DDD;
+    /* border-radius: 2px; */
+    text-align: left;
+    padding: 4px 4px;
+}
+.box-item{
+  background-color: cornsilk;
+}
+
+
+p,a{
+  text-decoration: none;
+  color: #777;
+  font-size: x-large;
+}
+a:hover{
+  text-decoration: underline;
+}
